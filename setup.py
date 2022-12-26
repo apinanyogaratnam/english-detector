@@ -20,6 +20,6 @@ setuptools.setup(
     ],
     python_requires=">=3.10.4",
     install_requires=[
-        'pycld2==0.41.0',
+        'pycld2',
     ],
 )
