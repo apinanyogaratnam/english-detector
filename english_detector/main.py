@@ -1,22 +1,14 @@
-import spacy
-
-from spacy_langdetect import LanguageDetector
+import pycld2 as cld2
 
 
-def detect_english(text: str | None, expected_score: float | None = None) -> bool:
+def detect_english(text: str | None) -> bool:
     if not text:
         return True
 
-    nlp = spacy.load('en')
-    nlp.add_pipe(LanguageDetector(), name='language_detector', last=True)
-    doc = nlp(text)
-    detect_language = doc._.language
+    _, _, _, detect_language = cld2.detect(text, returnVectors=True)
 
-    language = detect_language['language']
-    actual_score = detect_language['score']
+    return len(detect_language) == 1 and detect_language[0][2] == 'ENGLISH'
 
-    is_english = True
-    if expected_score is not None:
-        is_english = is_english and actual_score >= expected_score
 
-    return is_english and language == 'en'
+if __name__ == '__main__':
+    print(detect_english('this is english.'))
