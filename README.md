@@ -1,8 +1,8 @@
-# Base Python Template
+# English Detector
 
 [![Downloads](https://static.pepy.tech/personalized-badge/english-detector?period=total&units=none&left_color=grey&right_color=green&left_text=Downloads)](https://pepy.tech/project/english-detector)
 
-A template of README best practices to make your README simple to understand and easy to use.
+A python package to detect english text.
 
 ## Table of Contents
 
