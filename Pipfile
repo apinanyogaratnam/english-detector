@@ -5,6 +5,8 @@ name = "pypi"
 
 [packages]
 python-dotenv = "==0.21.0"
+spacy = "*"
+spacy-langdetect = "*"
 
 [dev-packages]
 black = "==22.10.0"
