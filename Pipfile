@@ -8,6 +8,7 @@ python-dotenv = "==0.21.0"
 spacy = "*"
 spacy-langdetect = "*"
 pycld2 = "*"
+textblob = "*"
 
 [dev-packages]
 black = "==22.10.0"
