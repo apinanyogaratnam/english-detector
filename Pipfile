@@ -5,7 +5,7 @@ name = "pypi"
 
 [packages]
 python-dotenv = "==0.21.0"
-pycld2 = "*"
+pycld2 = "==0.41"
 
 [dev-packages]
 black = "==22.10.0"
