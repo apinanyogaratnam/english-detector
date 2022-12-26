@@ -7,7 +7,7 @@ name = "pypi"
 python-dotenv = "==0.21.0"
 spacy = "*"
 spacy-langdetect = "*"
-pycld2 = "*"
+pycld2 = "==0.41.0"
 textblob = "*"
 
 [dev-packages]
