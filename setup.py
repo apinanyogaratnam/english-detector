@@ -20,8 +20,6 @@ setuptools.setup(
     ],
     python_requires=">=3.10.4",
     install_requires=[
-        'spacy==3.4.4',
-        'spacy-langdetect==0.1.2',
         'pycld2==0.41',
     ],
 )
