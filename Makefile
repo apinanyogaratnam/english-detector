@@ -25,5 +25,4 @@ workflow:
 	make upload
 	make tag
 
-generate-docs:
-	python docs/document.py
+
