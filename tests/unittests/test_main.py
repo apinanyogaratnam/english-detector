@@ -10,3 +10,6 @@ class TestMain:
 
     def test_detect_english_with_score(self: 'TestMain') -> None:
         assert detect_english('this is english', 0.98)
+
+    def test_detect_english_no_text(self: 'TestMain') -> None:
+        assert detect_english(None)
