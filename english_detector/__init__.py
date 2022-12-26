@@ -1,5 +1,5 @@
-from english_detector.main import greetings
+from english_detector.main import detect_english
 
 __all__ = [
-    greetings,
+    detect_english,
 ]
