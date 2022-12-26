@@ -16,16 +16,17 @@ A python package to detect english text.
 Install the package using pip:
 
 ```sh
-pip install base
+pip install english-detector
 ```
 
 ## Usage
 
 ```python
-from base_python_package_template import greetings
+from english-detector import detect_english
 
-greeting = greetings()
-print(greeting)
+text = '''Hansel and Gretel are a brother and sister abandoned in a forest, where they fall into the hands of a witch who lives in a house made of gingerbread, cake, and candy. The cannibalistic witch intends to fatten Hansel before eventually eating him, but Gretel pushes the witch into her own oven and kills her.'''
+
+print(detect_english(text)) # prints True
 ```
 
 ## Support
