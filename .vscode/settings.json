@@ -1,8 +1,6 @@
 {
     "makefile.extensionOutputFolder": "./.vscode",
     "cSpell.words": [
-        "langdetect",
         "pycld",
-        "spacy"
     ]
 }
