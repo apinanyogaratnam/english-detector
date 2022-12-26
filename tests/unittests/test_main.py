@@ -2,8 +2,7 @@ from english_detector.main import detect_english
 
 
 class TestMain:
-    def __init__(self: 'TestMain') -> None:
-        self.text = 'Medium is a social publishing platform with a diverse array of metaverse and gaming-related articles and stories. View this article at medium.com.'
+    text = 'Medium is a social publishing platform with a diverse array of metaverse and gaming-related articles and stories. View this article at medium.com.'
 
     def test_detect_english_return_value(self: 'TestMain') -> None:
         assert detect_english(self.text)
